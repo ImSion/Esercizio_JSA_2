@@ -1,0 +1,382 @@
+body {
+  background: rgb(46, 63, 87);
+  background: linear-gradient(
+    90deg,
+    rgb(63, 86, 119) 0%,
+    rgba(33, 44, 61, 1) 42%,
+    rgb(15, 21, 29) 100%
+  );
+}
+
+/*SIDEBAR SECTION*/
+.navbar.fixed-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 230px;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  background-color: black;
+  z-index: 1200;
+}
+
+.navbar.fixed-left .navbar-collapse .navbar-nav a {
+  color: rgb(145, 145, 145) !important;
+  transition: 0.3s;
+}
+
+.navbar.fixed-left .navbar-collapse .navbar-nav a:hover {
+  color: white !important;
+}
+
+.navbar.fixed-left .navbar-brand {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 3px;
+}
+
+.nav-btn {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.nav-btn a {
+  color: rgb(145, 145, 145);
+}
+
+.signup-btn {
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  border-radius: 20px;
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.signup-btn:hover {
+  color: white;
+  background-color: rgb(60, 211, 60);
+  border: 1px solid rgb(60, 211, 60);
+}
+
+.login-btn {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.login-btn:hover {
+  color: black;
+  background-color: white;
+}
+
+@media screen and (max-width: 936px) {
+  #sidebar {
+    display: none;
+  }
+}
+
+/* BOTTOM PLAYER SECTION*/
+
+.bg-container {
+  height: 5.5rem;
+  background-color: #282828;
+}
+
+.playerControls .row {
+  justify-content: space-between;
+}
+
+.playerControls a img {
+  width: 14px;
+  margin-top: 1rem;
+  filter: brightness(60%);
+}
+
+.playerControls a:hover {
+  filter: brightness(80%);
+  color: #282828 !important;
+}
+
+.progress {
+  color: white;
+  background-color: #414141;
+  height: 3px;
+}
+
+.playBar p {
+  margin-bottom: 20px;
+  color: white;
+}
+
+/*MAIN PAGE SECTION*/
+
+.mainLinks {
+  margin-top: 1.5rem;
+  justify-content: space-evenly;
+}
+
+.mainLinks a {
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  opacity: 0.3;
+}
+
+.mainLinks a:hover {
+  text-decoration: none;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.imgLinks a p,
+.mainPage p a {
+  padding-top: 8px;
+  font-size: 12px;
+  color: white;
+  font-weight: 700;
+}
+
+.mainPage p a:hover {
+  color: rgb(138, 138, 138);
+}
+
+.imgLinks a:hover {
+  text-decoration: none;
+}
+
+.imgLinks a img:hover {
+  filter: brightness(50%);
+}
+
+#eminem,
+#metallica,
+#queen,
+#searchResults,
+#artist-tracks {
+  color: white;
+  font-weight: 700;
+  padding-top: 50px;
+}
+
+#queen {
+  margin-bottom: 200px;
+}
+
+.trackHover:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.trackHover a {
+  text-decoration: none;
+}
+
+#btnPlay {
+  font-weight: 700;
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.duration {
+  float: right;
+}
+
+.mainButton {
+  border: 1px solid #fff !important;
+  border-radius: 20px !important;
+  height: 2.2em !important;
+  width: 7em;
+  text-align: center;
+  padding: 0px 10px !important;
+}
+
+.titleMain {
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#hipHopSection {
+  margin-bottom: 7rem;
+}
+
+#followers {
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.album-title {
+  color: white;
+  font-weight: bold;
+  font-size: x-large;
+  margin-bottom: 0;
+}
+
+.artist-name {
+  color: white;
+}
+
+.mainPage img {
+  width: 200px;
+}
+
+.card {
+  width: 400px;
+  padding: 2px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.558);
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.06);
+
+}
+
+.card img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: 0.4s ease-in-out;
+}
+
+.card img:hover {
+  box-shadow: 0px 0px 3px white;
+  transform: scale(1.02);
+}
+
+.card h3 {
+  margin-top: 8px;
+  font-size: 16px;
+  transition: 0.4s ease-in-out;
+}
+
+.card h3:hover {
+  transform: scale(1.06);
+  text-shadow: 0px 0px 4px red;
+}
+
+.card p{
+  margin-bottom: 2px;
+  font-size: 14px;
+  transition: 0.4s ease-in-out;
+}
+
+.card p:hover {
+  transform: scale(1.06);
+  text-shadow: 0px 0px 4px red;
+}
+
+.card h3, p {
+  width: 100%;
+}
+
+
+/* stilizzo il pulsante "crea playlist */
+.newlist {
+  background-color: black;
+  color: white;
+  width: 200px;
+  border: 0.1px solid white;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+.newlist:hover {
+  box-shadow: 0px 0px 10px rgb(60, 211, 60);
+  text-shadow: 0px 0px 5px black;
+  background-color: rgb(60, 211, 60);
+  color: black;
+  border: 0.1px solid rgb(60, 211, 60);
+}
+
+/* Stilizzo l'intera barra di scorrimento */
+::-webkit-scrollbar {
+  width: 8px; 
+}
+
+/* Stilizzo la traccia (parte della barra dove si muove il thumb) */
+::-webkit-scrollbar-track {
+  background: black; 
+}
+
+/* Stilizzo il thumb (la parte della barra che si muove) */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 20px;
+}
+
+/* Cambio il colore del thumb al passaggio del mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+/* stilizzo il modale per la playlist */
+.modal-content {
+  background-color: black;
+}
+.modal-header {
+  color: rgb(60, 211, 60);
+}
+.close {
+  color: rgb(60, 211, 60);
+  transition: 0.3s ease-in-out;
+}
+.close:hover {
+  color: rgb(60, 211, 60);
+  text-shadow: 0px 0px 10px rgb(60, 211, 60);
+  transform: scale(1.1);
+}
+
+.card-modal {
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.card-modal:hover {
+  transform: scale(1.05);
+  padding: 5px;
+  box-shadow: 0px 0px 10px rgb(60, 211, 60);
+}
+.bi-music-note-list {
+  font-size: 23px;
+}
+
+
+
+.addsong {
+  background-color: black;
+  color: white;
+  width: 150px;
+  border: 0.1px solid white;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 5px;
+}
+
+.addsong:hover {
+  box-shadow: 0px 0px 10px rgb(60, 211, 60);
+  text-shadow: 0px 0px 5px black;
+  background-color: rgb(60, 211, 60);
+  color: black;
+  border: 0.1px solid rgb(60, 211, 60);
+}
