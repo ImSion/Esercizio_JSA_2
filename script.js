@@ -77,12 +77,12 @@ artistiPresenti.forEach(artista => {
 
 
 document.getElementById('newlistbtn').addEventListener('click', function() {
-  showSongsInModal('NomeArtistaQui'); // Sostituisci 'NomeArtistaQui' con il nome dell'artista desiderato
+  showSongsInModal('NomeArtistaQui'); // Sostituisco 'NomeArtistaQui' con il nome dell'artista desiderato
 });
 
 function showSongsInModal(nomeArtista) {
   const container = document.getElementById('playlistSongs');
-  container.innerHTML = ''; // Pulisci il modal ad ogni apertura
+  container.innerHTML = ''; // Pulisco il modale ad ogni apertura
 
   fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem`)
       .then(response => response.json())
